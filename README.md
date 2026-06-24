@@ -51,7 +51,7 @@ PUBLIC_BASE_URL=https://your-vercel-domain.vercel.app
 https://your-vercel-domain.vercel.app/r/aB3x9
 ```
 
-문서에 QR 이미지를 넣을 때는 아래 형태의 SVG URL을 사용할 수 있습니다.
+문서에 QR 이미지를 넣을 때는 아래 형태의 PNG URL을 사용할 수 있습니다.
 
 ```text
 https://your-vercel-domain.vercel.app/api/qr?url=https%3A%2F%2Fyour-vercel-domain.vercel.app%2Fr%2FaB3x9

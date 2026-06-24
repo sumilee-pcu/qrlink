@@ -22,8 +22,9 @@ export default async function handler(req, res) {
     return;
   }
 
-  const svg = await QRCode.toString(targetUrl, {
-    type: "svg",
+  const png = await QRCode.toBuffer(targetUrl, {
+    type: "png",
+    width: 720,
     errorCorrectionLevel: "quartile",
     margin: 3,
     color: {
@@ -33,7 +34,7 @@ export default async function handler(req, res) {
   });
 
   res.statusCode = 200;
-  res.setHeader("content-type", "image/svg+xml; charset=utf-8");
+  res.setHeader("content-type", "image/png");
   res.setHeader("cache-control", "public, max-age=86400, s-maxage=86400");
-  res.end(svg);
+  res.end(png);
 }
