@@ -11,6 +11,7 @@ URL을 선명한 QR 이미지로 변환하고 PNG 또는 SVG로 내려받는 개
 - 전경색, 배경색, 크기, 여백, 오류 보정 수준 조정
 - QR 생성은 서버 없이 브라우저에서 동작
 - Vercel API + Supabase DB 기반 단축주소 생성
+- 문서 임베드용 QR 이미지 API
 
 ## 실행
 
@@ -48,6 +49,12 @@ PUBLIC_BASE_URL=https://your-vercel-domain.vercel.app
 
 ```text
 https://your-vercel-domain.vercel.app/r/aB3x9
+```
+
+문서에 QR 이미지를 넣을 때는 아래 형태의 SVG URL을 사용할 수 있습니다.
+
+```text
+https://your-vercel-domain.vercel.app/api/qr?url=https%3A%2F%2Fyour-vercel-domain.vercel.app%2Fr%2FaB3x9
 ```
 
 ### 정적 호스팅
