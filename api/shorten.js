@@ -25,7 +25,7 @@ function isAllowedUrl(value) {
   }
 }
 
-function makeSlug(length = 7) {
+function makeSlug(length = 5) {
   const bytes = randomBytes(length);
   let slug = "";
   for (const byte of bytes) {

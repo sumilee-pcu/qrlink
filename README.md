@@ -47,7 +47,7 @@ PUBLIC_BASE_URL=https://your-vercel-domain.vercel.app
 배포 후 단축주소는 아래 형태로 동작합니다.
 
 ```text
-https://your-vercel-domain.vercel.app/r/abc1234
+https://your-vercel-domain.vercel.app/r/aB3x9
 ```
 
 ### 정적 호스팅

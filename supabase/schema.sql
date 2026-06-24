@@ -16,3 +16,6 @@ create policy "Service role can manage short links"
   for all
   using (auth.role() = 'service_role')
   with check (auth.role() = 'service_role');
+
+grant usage on schema public to service_role;
+grant select, insert, update, delete on table public.short_links to service_role;
